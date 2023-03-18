@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Midnight Writers Society</title>
+  <script defer src="js/text.js"></script>
+  <script defer src="js/toggle_light_dark.js"></script>
+</head>
+<body>
+
+  <header>
+
+    <div id="home">
+
+      <!-- logo -->
+      <div>
+        <div id="logo" style="display: inline-block; vertical-align: middle;">
+          <a id="logo-click" href="midnightridersociety.html">
+            <img src="images/eye.png" width="60">
+          </a>
+        </div>
+        <!-- home button -->
+        <h2 id="title" class="title" style="display: inline-block; 
+        vertical-align: middle;">
+        <span style="cursor: pointer;" onclick="window.location.href=
+        'midnightridersociety.html'">Midnight Writer's Society</span>
+        </h2>
+      </div>
+
+      <div id="menu-bar">
+        <a id="logo-click" class="menu-bar-buttons" href="upvote.html">
+          <img src="images/upvote-day.svg" alt="upvote" id="upvote" width="30">
+        </a>
+        <a id="logo-click" class="menu-bar-buttons" href="comp.html">
+          <img src="images/comp-day.png" alt="comp" id="comp" width="30">
+        </a>
+        <a id="logo-click" class="menu-bar-buttons" href="settings.html">
+          <img src="images/gear-inverted.png" alt="settings" id="settings" width="30">
+        </a>
+      </div>
+
+      <div id="pref">
+        <div id="theme-toggle-div">
+          <img id="theme-image" src="images/sun.png" alt="Sun">
+        </div>
+        <div id="music-toggle-div">
+          <img id="music-image" src="images/music.png" alt="music" width="30">
+        </div>
+        <div id="profile-div">
+          <div id="dropdown" class="dropdown-content">
+            <img src="images/profile.jpeg" alt="Profile Photo" id="profile-photo">
+            <div id="dropdown-items">
+              <a href="page1.html">Profile</a>
+              <a href="page2.html">Item 2</a>
+              <a href="page3.html">Item 3</a>
+              <a href="page4.html">Item 4</a>
+              <a href="page5.html">Item 5</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+    
+  </header>
+  
+  <main>
+
+    <!-- this is the poem box --> 
+    <div id="wrapper">
+      <div id="poem-container">
+        <div id="poem-prompt"></div>
+        <div id="enter-poem">
+          <label id="enter" for="poem-input">Enter your poem below:</label>
+        </div>
+        <div id="poem-div">
+          <form action="html->sql.php" method="post"> <!-- shares inputted poem with php --> 
+            <textarea id="poem-input"></textarea>
+          </form>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+      <div id="refresh">
+        <button id="new-prompt-button">Get New Prompt</button>
+        <button id="poem-of-the-day-button">Poem of the Day</button>
+        <button id="switch-music-folder">Switch Music Folder</button>
+      </div>
+    </div>
+    <!-- JavaScript libraries: There are many JavaScript libraries 
+    available that provide customizable text editing interfaces, 
+    such as CKEditor and TinyMCE. These libraries can be integrated 
+    into your website to provide a rich text editing experience for 
+    your users.-->
+  </main>
+  
+
+</body>
+</html>
