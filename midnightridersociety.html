@@ -6,19 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css" />
   <title>Midnight Writers Society</title>
-  <script defer src="js/text.js"></script>
+  <script defer src="js/toggleTheme.js"></script>
+  <script defer src="js/profileDropdown.js"></script>
+  <script defer src="js/enterPoem.js"></script>
+  <script defer src="js/handlePoemSubmit.js"></script>
+  <script defer src="js/handleHover.js"></script>
 </head>
 <body>
 
   <header>
-
     <div id="home">
 
       <!-- logo -->
       <div>
         <div id="logo" style="display: inline-block; vertical-align: middle;">
           <a id="logo-click" href="midnightridersociety.html">
-            <img src="images/eye.png" width="60">
+            <img src="y. images/eye.png" width="60">
           </a>
         </div>
         <!-- home button -->
@@ -31,23 +34,23 @@
 
       <div id="menu-bar">
         <a id="logo-click" class="menu-bar-buttons" href="upvote.html">
-          <img src="images/upvote-day.svg" alt="upvote" id="upvote" width="30">
+          <img src="y. images/upvote-day.svg" alt="upvote" id="upvote" width="30">
         </a>
         <a id="logo-click" class="menu-bar-buttons" href="comp.html">
-          <img src="images/comp-day.png" alt="comp" id="comp" width="30">
+          <img src="y. images/comp-day.png" alt="comp" id="comp" width="30">
         </a>
         <a id="logo-click" class="menu-bar-buttons" href="settings.html">
-          <img src="images/gear-inverted.png" alt="settings" id="settings" width="30">
+          <img src="y. images/gear-inverted.png" alt="settings" id="settings" width="30">
         </a>
       </div>
 
       <div id="pref">
         <div id="theme-toggle-div">
-          <img id="theme-image" src="images/sun.png" alt="Sun">
+          <img id="theme-image" src="y. images/sun.png" alt="Sun">
         </div>
         <div id="profile-div">
           <div id="dropdown" class="dropdown-content">
-            <img src="images/profile.jpeg" alt="Profile Photo" id="profile-photo">
+            <img src="y. images/profile-day.png" alt="Profile Photo" id="profile-photo">
             <div id="dropdown-items">
               <a href="page1.html">Profile</a>
               <a href="page2.html">Item 2</a>
@@ -59,15 +62,13 @@
         </div>
         
       </div>
-
     </div>
-    
   </header>
   
   <main>
 
     <!-- this is the poem box --> 
-    <div id="wrapper">
+    <div id="poem-wrapper">
       <div id="poem-container">
         <div id="poem-prompt"></div>
         <div id="enter-poem">
@@ -78,13 +79,26 @@
             <textarea id="poem-input"></textarea>
           </form>
         </div>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
+        <div id="submit-container">
+          <a href="#" id="submit-button">
+            <img src="y. images/submit-day.png" alt="Submit" id="submit-img">
+            <span class="tooltip">submitchur pome</span>
+          </a>
+        </div>        
       </div>
       <div id="refresh">
-        <button id="new-prompt-button">Get New Prompt</button>
-        <button id="poem-of-the-day-button">Poem of the Day</button>
+        <div id="new-prompt-container">
+          <a id="new-prompt-butt">
+            <img id="new-prompt-button">
+            <span class="tooltip2">Would you like a new prompt?</span>
+          </a>
+        </div>
+        <div id="poem-of-the-day-container">
+          <a id="poem-of-day">
+            <img id="poem-of-the-day-button">
+            <span class="tooltip3">Poem of the day</span>
+          </a>
+        </div>
       </div>
     </div>
     <!-- JavaScript libraries: There are many JavaScript libraries 
@@ -93,7 +107,5 @@
     into your website to provide a rich text editing experience for 
     your users.-->
   </main>
-  
-
 </body>
 </html>

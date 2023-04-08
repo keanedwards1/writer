@@ -96,7 +96,7 @@ function setRandomPlaceholder() {
   }
   window.onload = setRandomPlaceholder;
 
-/* random prompt */
+  /* random prompt */
     // Define an array of all prompts, including those that are displayed for the week
     const allPrompts = [
       /* Monday */ "If you could say how high the bees knees bees, how high would you please to sees?",
@@ -148,7 +148,7 @@ function setRandomPlaceholder() {
     
 
 
-/* make the enter prompt here disappear when user starts typing */
+  /* make the enter prompt here disappear when user starts typing */
   const input = document.getElementById('poem-input');
   const enterPoem = document.getElementById('enter-poem');
 
@@ -157,102 +157,9 @@ function setRandomPlaceholder() {
     enterPoem.textContent = '';
   });
 
-  // Alternatively, if you want to hide the prompt text once it has been seen
+  // hide the prompt text once it has been seen
   if (localStorage.getItem('seenPrompt')) {
     enterPoem.textContent = '';
   } else {
     localStorage.setItem('seenPrompt', true);
   }
-
-/* toggle light/dark */
-  const themeImage = document.getElementById('theme-image');
-  const body = document.body;
-  const gearImage = document.getElementById('settings'); // Get a reference to the gear image element
-  const fightImage = document.getElementById('comp');
-  const upvoteImage = document.getElementById('upvote');
-
-  // Function to set the gear image based on the theme
-  function setGearImage(isDarkMode) {
-    if (isDarkMode) {
-      gearImage.src = 'images/gear-inverted.png';
-    } else {
-      gearImage.src = 'images/gear.png';
-    }
-  }
-
- // Function to set the vomp image based on the theme
- function setCompImage(isDarkMode) {
-  if (isDarkMode) {
-    fightImage.src = 'images/comp-night.png';
-  } else {
-    fightImage.src = 'images/comp-day.png';
-  }
-}
-
-// Function to set the upvote image based on the theme
-function setUpvoteImage(isDarkMode) {
-  if (isDarkMode) {
-    upvoteImage.src = 'images/upvote-night.png';
-  } else {
-    upvoteImage.src = 'images/upvote-day.svg';
-  }
-}
-
-  // Check for user preference in local storage
-  const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
-
-  // Set the initial theme and images based on user preference
-  if (isDarkMode) {
-    body.classList.add('dark-theme');
-    themeImage.src = 'images/moon.png';
-    themeImage.alt = 'Moon';
-    setGearImage(true);
-    setCompImage(true);
-    setUpvoteImage(true);
-  } else {
-    body.classList.add('light-theme');
-    themeImage.src = 'images/sun.png';
-    themeImage.alt = 'Sun';
-    setGearImage(false);
-    setCompImage(false);
-    setUpvoteImage(false);
-  }
-
-  // Toggle the theme and images when the image is clicked
-  themeImage.addEventListener('click', function () {
-    if (body.classList.contains('light-theme')) {
-      body.classList.remove('light-theme');
-      body.classList.add('dark-theme');
-      localStorage.setItem('isDarkMode', 'true');
-      themeImage.src = 'images/moon.png';
-      themeImage.alt = 'Moon';
-      setGearImage(true);
-      setCompImage(true);
-      setUpvoteImage(true);
-    } else {
-      body.classList.remove('dark-theme');
-      body.classList.add('light-theme');
-      localStorage.setItem('isDarkMode', 'false');
-      themeImage.src = 'images/sun.png';
-      themeImage.alt = 'Sun';
-      setGearImage(false);
-      setCompImage(false);
-      setUpvoteImage(false);
-    }
-  });
-
-/* dropdown menu */
-const dropdownContent = document.getElementById('dropdown');
-const profilePhoto = document.getElementById('profile-photo');
-const dropdownItems = document.getElementById('dropdown-items');
-
-profilePhoto.addEventListener('click', () => {
-  dropdownItems.style.display = dropdownItems.style.display === 'block' ? 'none' : 'block';
-});
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = (event) => {
-  if (!event.target.matches('#profile-photo')) {
-    dropdownItems.style.display = 'none';
-  }
-};
