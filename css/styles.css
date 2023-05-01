@@ -59,14 +59,14 @@ this background as text colors */
 
 #title {
   color: #9FADC6;
-  margin-left: -15px;
+  margin-left: -10px;
   margin-top: 10px;
   width: 100px;
   text-align: right;
 }
 #logo {
-  margin-left: 35px;
-  margin-top: 35px;
+  margin-left: 50px;
+  margin-top: 65px;
 }
 .logo-click {
   cursor: pointer;
@@ -298,6 +298,7 @@ this background as text colors */
     width: 40px;
     height: 40px;
     padding: 20px;
+    margin-top: 6px;
     color:#fff;
     text-align: center;
   }
@@ -329,10 +330,10 @@ this background as text colors */
   
   #refresh {
     width: auto;
-    height: 700px;
-    margin-bottom: 4in;
+    height: auto;
     display: flex;
-    margin-left: 100px;
+    margin-top: 10px;
+    margin-left: 400px;
 }
 /* for new prompt button */
   #new-prompt-button {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,6 +73,21 @@
         <div id="enter-poem">
           <label id="enter" for="poem-input">Enter your poem below:</label>
         </div>
+        <div id="refresh">
+          <div id="new-prompt-container">
+            <a id="new-prompt-butt">
+              <img id="new-prompt-button">
+              <span class="tooltip2">Would you like a new prompt?</span>
+            </a>
+          </div>
+          <div id="poem-of-the-day-container">
+            <a id="poem-of-day">
+              <img id="poem-of-the-day-button">
+              <span class="tooltip3">Poem of the day</span>
+            </a>
+          </div>
+        </div>
+        
         <div id="poem-div">
           <form action="html->sql.php" method="post"> <!-- shares inputted poem with php --> 
             <textarea id="poem-input"></textarea>
@@ -86,20 +100,7 @@
           </a>
         </div>        
       </div>
-      <div id="refresh">
-        <div id="new-prompt-container">
-          <a id="new-prompt-butt">
-            <img id="new-prompt-button">
-            <span class="tooltip2">Would you like a new prompt?</span>
-          </a>
-        </div>
-        <div id="poem-of-the-day-container">
-          <a id="poem-of-day">
-            <img id="poem-of-the-day-button">
-            <span class="tooltip3">Poem of the day</span>
-          </a>
-        </div>
-      </div>
+
     </div>
     <!-- JavaScript libraries: There are many JavaScript libraries 
     available that provide customizable text editing interfaces, 

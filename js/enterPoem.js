@@ -86,7 +86,40 @@ function setRandomPlaceholder() {
         '"Life happens wherever you are, whether you make it or not."',
         '"Protection and power are overrated. I think you are very wise to choose happiness and love."',
         "Many things that seem threatening in the dark become welcoming when we shine a light on them.",
-        "It's time for you to look inward and begin asking yourself the big questions: Who are you? And what do you want?"
+        "It's time for you to look inward and begin asking yourself the big questions: Who are you? And what do you want?",
+        "\t\t\tPiece A Shit \n\n When I see a frog\n\n & it takes a hop away from me \n\n it's like \n\n what the fuck man.",
+        "The voice of the intellect is a soft one, \n but it does not rest until it has gained hearing. \n\n -Sigmund Freud",
+        "All truly great thoughts are conceived by walking \n\n Friendrich Nietzsche",
+        "Beauty is mysterious as well as terrible.\n God and devil are fighting there,\n and the battlefield is the heart of man. \n\n Fyodor Dostoevsky",
+        "Trees are poems the earth writes upon the sky. \n\n\t\tKahlil Gibran",
+        "Though we travel the world over to find the beautiful,\n we must carry it with us or we find it not \n\n\t\t Ralph Waldo Emerson",
+        "Love takes off\nmasks that we fear\nwe cannot live\nwithout and know\nwe cannot live\nwithin.\n\nJames Baldwin",
+        "Flow with whatever\nmay happen and let\nyour mind be free. Stay]n centerd by accepting\n whatever you are doing.\nThis is the ultimate\n\nZhuangzi",
+        "Do not waste your\ntime looking for an\nobstacle - maybe\n there is none.\n\n Franz Kafka",
+        "Only the heart\nknows how to find\nwhat is precious. \n\n Fyodor Dostoevsky",
+        "A Candle never\nLoses any of its\nLight while Lighting\nup another candle.\n\n\t\tRumi",
+        "Let us live for the\nbeauty of our own\nreality. \n\n Charles Lamb",
+        "Everything that is\nmade beautiful and\nfair and lovely is\nmade for the eye of\none who sees.\n\n \t\tRumi",
+        "It's no virtue to\ngain the whole\mworld. Just gain the\nheart of one\nperson.\\n\n\t\tSaadi",
+        "The truth knocks on the door and you say,\n'Go away, I'm looking for the truth,'\nand so it goes away.\n\nZen and The Art of Motorcycle Maintenance",
+        "You have to love somebody enough to hate them.\n\nThe Absolutely True Diary of a Part-Time Indian",
+        "I was a warrior who fought with his pen.\n\n The Absolutely True Diary of a Part-Time Indian",
+        "I grabbed my book and opened it up.\nI wanted to smell it. Heck,\nI wanted to kiss it.\nYes, kiss it.\n\nThe Absolutely True Diary of a Part-Time Indian",
+        "Memory is a long-armed woman with dangerous nails.'We Are All Completely Beside Ourselves' by Karen Joy Fowler",
+        "Some stories are true that never happened.'We Are All Completely Beside Ourselves' by Karen Joy Fowler",
+        "What if language itself is a virus? 'We Are All Completely Beside Ourselves' by Karen Joy Fowler",
+        "That's the trouble with fairy tales. In real life, people don't live happily ever after. 'We Are All Completely Beside Ourselves' by Karen Joy Fowler",
+        "The difference between a house and a home is like the difference between a body and a soul. 'We Are All Completely Beside Ourselves' by Karen Joy Fowler",
+        "The past is always present, and the future is always uncertain. We Are All Completely Beside Ourselves'",
+        "No matter how hard we try, we can never really know another person's experience. We Are All Completely Beside Ourselves'",
+        "Guilt is a powerful motivator. We Are All Completely Beside Ourselves'",
+        "We are all broken, that's how the light gets in. We Are All Completely Beside Ourselves'",
+        "It's not about what you deserve. It's about what you believe. And I believe in love. We Are All Completely Beside Ourselves'",
+        "We're all lonely for something we don't know we're lonely for. How else to explain the curious feeling that goes around feeling like missing somebody we've never even met? 'The Goldfinch' by Donna Tartt",
+        "The world is always changing brightness and hotness and soundness, and there are people in it—babies and old people and animals and the insane—and it's all going on and on, and it's all magnificent. 'The Goldfinch' by Donna Tartt",
+        "Consciousness is not just a byproduct of the brain, it is the source of all existence. 'Beyond Biocentrism' by Robert Lanza and Bob Berman"
+
+
         
 
     ];
