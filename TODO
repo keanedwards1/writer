@@ -1,0 +1,8 @@
+1. Add a piece of logic that allows users to remove placeholders (poems) they don't like
+    and add poems that they want:
+    There could be a page where people can vote on new poems that they like (user submitted)
+    (They get added if a certain percentage of the user's vote for it)
+
+2. Add a toggle to toggle between poem and prose prompts
+
+3

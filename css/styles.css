@@ -7,9 +7,9 @@ html {
   overflow-x: scroll;
   scroll-behavior: smooth;
 }
+
 body {
-  overflow-x: scroll;
-  width: 3000px;
+  width: 100vh;
 }
 body.dark-theme {
   background-color: #0b0e13;
@@ -104,6 +104,7 @@ this background as text colors */
   position: relative;
   display: inline-block;
   margin-top: -50px;
+  width: auto;
 }
 .dropdown-content {
   position: absolute;
@@ -112,7 +113,7 @@ this background as text colors */
 
 #dropdown-items {
   display: none;
-  background-color: #f9f9f9;
+  background-color: #bbc1ea;
   max-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   overflow: auto;
@@ -123,10 +124,11 @@ this background as text colors */
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  background-color: #4855ad;
 }
 
 .dropdown-items a:hover {
-  background-color: #f1f1f1;
+  background-color: #4855ad;
 }
 
 #profile-photo {
@@ -172,6 +174,8 @@ this background as text colors */
 #poem-div {
   height: auto;
   width: 1000px;
+  display: inline-block;
+  overflow: auto;
 }
 /* free poem textarea */
 #poem-input {
@@ -230,10 +234,12 @@ this background as text colors */
   }
   #submit-container {
     width: 40px;
-    float: right;
+    /* float: right; */
     height: 40px;
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
     margin-left: 40px;
+    display: inline-block;
+    vertical-align: bottom;
   }
   #submit-img {
     width: 40px;
@@ -263,6 +269,7 @@ this background as text colors */
     height: 40px;
     text-align: center;
     padding: 15px;
+    margin-right: 5px;
   }
   #new-prompt-butt {
     width: 200px;
@@ -270,6 +277,31 @@ this background as text colors */
     max-width: 100%;
   }
   #new-prompt-button {
+    width: 40px;
+    height: 40px;
+    max-width: 100%;
+  }
+  #submit-container, #submit-button, #new-poem-container, #new-poem-butt {
+    position: relative;
+  }
+  
+  #submit-container:hover .tooltip, #new-poem-container:hover .tooltip {
+    display: block;
+  }
+  #new-poem-container {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 11px;
+    margin-left: -13px
+  }
+  #new-poem-butt {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+  }
+  #new-poem-button {
     width: 40px;
     height: 40px;
     max-width: 100%;
@@ -290,8 +322,16 @@ this background as text colors */
   #new-prompt-container:hover .tooltip2 {
     display: flex;
   }
-  
+
   #new-prompt-container, #new-prompt-butt {
+    position: relative;
+  }
+
+  #new-poem-container:hover .tooltip2 {
+    display: flex;
+  }
+
+  #new-poem-container, #new-poem-butt {
     position: relative;
   }
   #poem-of-the-day-container {
@@ -344,6 +384,9 @@ this background as text colors */
   #new-prompt-button:hover {
     cursor: pointer;
   }
+  #new-poem-button:hover {
+    cursor: pointer;
+  }
 body.dark-theme #title {
   color: #566b8e;
 }
@@ -359,6 +402,73 @@ body.dark-theme #poem-input::-moz-placeholder {
 body.dark-theme #poem-input:-ms-input-placeholder {
   color: #566b8e;
 }
+
+#rectangleContainer {
+  position: fixed;
+  top: 0;
+  right: -420px; /* Start off-screen */
+  width: 300px;
+  height: 300px;
+  margin-top: 300px;
+  margin-right: 20px;
+  transition: right 0.3s ease-out;
+}
+
+#rectangle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffcc00, #ff9900); /* Gradient colors */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.custom-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-button:hover {
+  background-color: #45a049;
+}
+
+.custom-button:active {
+  background-color: #3e8e41;
+}
+
+#popup-writing {
+  color:rgb(57, 71, 96)
+  
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  grid-gap: 10px; /* Gap between grid items */
+}
+
+.item {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+
+
+
+
 /* just bothering me, mess with this later
 @media only screen and (max-width: 768px) {
   #poem-wrapper {
@@ -402,6 +512,101 @@ body.dark-theme #poem-input:-ms-input-placeholder {
   }
 }
 */
+
+
+/* styles for screens smaller than 1200px */
+/* @media only screen and (max-width: 1250px) {
+  #home {
+    width: 100%;
+  }
+  #title-logo {
+    margin-left: -20px;
+  }
+  #pref {
+    margin-right: 0;
+  }
+  #theme-toggle-div {
+    margin-left: 20px;
+  }
+  #poem-wrapper {
+    width: 833px;
+    margin-left: -20px;
+  }
+  #poem-container {
+    width: 833px;
+  }
+  #peom-div {
+    height: auto;
+    width: 833px;
+    display: inline-block;
+    overflow: auto;
+  }
+}
+
+/* styles for screens smaller than 768px */
+/*@media only screen and (max-width: 890px) {
+  header {
+    width: 100%;
+  }
+  #home {
+    width: 100%;
+  }
+  #title-logo {
+    margin-left: -40px;
+  }
+  #pref {
+    margin-right: 250px;
+  }
+  #theme-toggle-div {
+    margin-left: 20px;
+  }
+  #peom-div {
+    width: 890px;
+  }
+  #poem-prompt {
+    width: 90%;
+  }
+  #enter-poem {
+    width: 90%;
+  }
+  #poem-input {
+    width: 90%;
+  }
+  #refresh {
+    margin-left: 10%;
+  }
+} */
+
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  /* other element styles for small screens */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    width: 90%;
+  }
+  /* other element styles for medium screens */
+}
+
+@media (min-width: 1025px) {
+  header {
+    width: 80%;
+  }
+  /* other element styles for large screens */
+}
+
+header {
+  transition: width 0.5s ease;
+}
+
+body {
+  width: 100%;
+}
+
 
 
 

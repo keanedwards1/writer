@@ -10,6 +10,7 @@
   <script defer src="js/enterPoem.js"></script>
   <script defer src="js/handlePoemSubmit.js"></script>
   <script defer src="js/handleHover.js"></script>
+  <script defer src="js/popup.js"></script>
 </head>
 <body>
 
@@ -17,7 +18,7 @@
     <div id="home">
 
       <!-- logo -->
-      <div>
+      <div id="title-logo">
         <div id="logo" style="display: inline-block; vertical-align: middle;">
           <a id="logo-click" href="midnightridersociety.html">
             <img src="y. images/eye.png" width="60">
@@ -83,7 +84,13 @@
           <div id="poem-of-the-day-container">
             <a id="poem-of-day">
               <img id="poem-of-the-day-button">
-              <span class="tooltip3">Poem of the day</span>
+              <span class="tooltip3">Prompt of the day</span>
+            </a>
+          </div>
+          <div id="new-poem-container">
+            <a id="new-peom-butt">
+              <img id="new-poem-button">
+              <span class="tooltip2">Would you like a new poem?</span>
             </a>
           </div>
         </div>
@@ -102,6 +109,36 @@
       </div>
 
     </div>
+    
+    <!-- for the popup-->
+
+    <button id="showRectButton">Information</button>
+
+    <div id="rectangleContainer">
+      <div id="rectangle">
+        <button id="closeButton">x</button>
+        <!-- Content inside the rectangle goes here -->
+        <div id="popup-writing">
+          <h3>
+            Hello, this page is for practicing poetic writing with any prompts you like.
+          </h3>
+        </div>
+        <div class="grid-container">
+          <div class="item">Item 1</div>
+          <div class="item">Item 2</div>
+          <div class="item">Item 3</div>
+          <div class="item">Item 4</div>
+          <div class="item">Item 5</div>
+          <div class="item">Item 6</div>
+        </div>
+        
+        <button class="custom-button">Click me</button>
+      </div>
+    </div>
+
+    
+
+
     <!-- JavaScript libraries: There are many JavaScript libraries 
     available that provide customizable text editing interfaces, 
     such as CKEditor and TinyMCE. These libraries can be integrated 

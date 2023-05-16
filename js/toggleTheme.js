@@ -8,6 +8,7 @@ const profileImage = document.getElementById('profile-photo');
 const submitButton = document.getElementById('submit-img');
 const newPrompt = document.getElementById('new-prompt-button');
 const poemOfTheDay = document.getElementById('poem-of-the-day-button');
+const newPoem = document.getElementById('new-poem-button');
 
 // Function to set the gear image based on the theme
 function setGearImage(isDarkMode) {
@@ -69,6 +70,14 @@ function setPoemOfTheDay(isDarkMode) {
   }
 }
 
+function setNewPoemButton(isDarkMode) {
+  if (isDarkMode) {
+    newPoem.src = 'y. images/newPrompt-night.png';
+  } else {
+    newPoem.src = 'y. images/newPrompt-day.png';
+  }
+}
+
 
 
 // Check for user preference in local storage
@@ -86,6 +95,7 @@ if (isDarkMode) {
   setSubmitButton(true);
   setNewPrompt(true);
   setPoemOfTheDay(true);
+  setNewPoemButton(true);
 } else {
   body.classList.add('light-theme');
   themeImage.src = 'y. images/sun.png';
@@ -97,6 +107,7 @@ if (isDarkMode) {
   setSubmitButton(false);
   setNewPrompt(false);
   setPoemOfTheDay(false);
+  setNewPoemButton(false);
 }
 
 // Toggle the theme and y. images when the sun or moon is clicked
@@ -114,6 +125,7 @@ themeImage.addEventListener('click', function () {
     setSubmitButton(true);
     setNewPrompt(true);
     setPoemOfTheDay(true);
+    setNewPoemButton(true);
   } else {
     body.classList.remove('dark-theme');
     body.classList.add('light-theme');
@@ -127,5 +139,6 @@ themeImage.addEventListener('click', function () {
     setSubmitButton(false);
     setNewPrompt(false);
     setPoemOfTheDay(false);
+    setNewPoemButton(false);
   }
 });

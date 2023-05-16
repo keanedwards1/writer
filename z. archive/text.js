@@ -125,19 +125,19 @@ function setRandomPlaceholder() {
       getNewPrompt();
     }
     
-    // Function to handle the click event on the poem of the day button
+    // Function to handle the click event on the prompt button
     function handlePoemOfDayButtonClick() {
       const container = document.getElementById("poem-prompt");
       const currentDate = new Date();
       const dayOfWeek = currentDate.getDay();
-      container.innerText = "Poem of the Day:\n" + allPrompts[dayOfWeek];
+      container.innerText = "Prompt of the Day:\n" + allPrompts[dayOfWeek];
     }
     
     // Add event listener to the new prompt button
     const newPromptButton = document.getElementById("new-prompt-button");
     newPromptButton.addEventListener("click", handleButtonClick);
     
-    // Add event listener to the poem of the day button
+    // Add event listener to the prompt of the day button
     const poemOfDayButton = document.getElementById("poem-of-the-day-button");
     poemOfDayButton.addEventListener("click", handlePoemOfDayButtonClick);
     
