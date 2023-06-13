@@ -1,4 +1,4 @@
-const submitButton = document.getElementById("submit-button");
+/* const submitButton = document.getElementById("submit-button"); 
 const poemInput = document.getElementById("poem-input");
 
 submitButton.addEventListener("click", function(event) {
@@ -8,4 +8,5 @@ submitButton.addEventListener("click", function(event) {
   const poem = poemInput.value;
   
   // Do something with the poem, such as send it to your server using AJAX
-});
+  
+}); */

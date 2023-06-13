@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Poems by Age Range</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Poems by Age Range</h1>
+  
+  <!-- Search input -->
+  <input type="text" id="searchInput" placeholder="Search by age range">
+  
+  <!-- Age range containers -->
+  <div class="age-range-container" id="ageRange1">
+    <h2>8-13</h2>
+    <ul id="poemsList1"></ul>
+  </div>
+  
+  <!-- Repeat the above container structure for other age ranges -->
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .age-range-container {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+
+  // Sample data of poems with age range tags
+const poems = [
+  { title: "Poem 1", ageRange: ["8-13", "14-18"] },
+  { title: "Poem 2", ageRange: ["14-18", "19-23"] },
+  // Add more poems with their respective age ranges
+];
+
+// Function to filter and display poems based on age range
+function displayPoemsByAgeRange(ageRange) {
+  const poemsList = document.getElementById(`poemsList${ageRange}`);
+
+  // Clear the existing list
+  poemsList.innerHTML = "";
+
+  // Filter poems based on age range
+  const filteredPoems = poems.filter(poem => poem.ageRange.includes(ageRange));
+
+  // Display filtered poems
+  filteredPoems.forEach(poem => {
+    const listItem = document.createElement("li");
+    listItem.textContent = poem.title;
+    poemsList.appendChild(listItem);
+  });
+}
+
+// Event listener for search input
+document.getElementById("searchInput").addEventListener("keyup", function() {
+  const searchValue = this.value.trim();
+  
+  // Check if search input is empty
+  if (searchValue === "") {
+    // Show all poems if search input is empty
+    poems.forEach(poem => {
+      poem.ageRange.forEach(ageRange => {
+        displayPoemsByAgeRange(ageRange);
+      });
+    });
+  } else {
+    // Show poems for the searched age range
+    displayPoemsByAgeRange(searchValue);
+  }
+});
+
+// Display all poems on page load
+poems.forEach(poem => {
+  poem.ageRange.forEach(ageRange => {
+    displayPoemsByAgeRange(ageRange);
+  });
+});

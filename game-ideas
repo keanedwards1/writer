@@ -1,0 +1,7 @@
+1. !Game-Currency:
+    a. each person puts up a certain amount of currentcy
+    b. theres a screen with the currency of each person laid out; 1, 5, 10, 20, 50, 100
+    c. theres generated writing related questions that each person has to answer to win the curent currency
+    d. if no one answers in time, move to next question
+    e. game ends when no one answers three in a row, or one player takes the pot
+    (need to figure out the numbers to make this profitable)

@@ -1,9 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css" />
-  <title>Midnight Writers Society</title>
-  <script defer src="js/text.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Midnight Writers Society</title>
+    <script defer src="js/toggleTheme.js"></script>
+    <script defer src="js/profileDropdown.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="home">
+
+        <!-- logo -->
+        <div>
+          <div id="logo" style="display: inline-block; vertical-align: middle;">
+            <a class="logo-click" href="index.html">
+              <img src="y. images/eye.png" width="60">
+            </a>
+          </div>
+          <!-- home button -->
+          <h2 id="title" class="title" style="display: inline-block; 
+          vertical-align: middle;">
+          <span style="cursor: pointer;" onclick="window.location.href=
+          'index.html'">Midnight Writer's Society</span>
+          </h2>
+        </div>
+
+        <div id="menu-bar">
+          <a class="logo-click menu-bar-buttons" href="upvote.html">
+            <img src="y. images/upvote-day.svg" alt="upvote" id="upvote" width="30">
+          </a>
+          <a class="logo-click menu-bar-buttons" href="comp.html">
+            <img src="y. images/comp-day.png" alt="comp" id="comp" width="30">
+          </a>
+          <a class="logo-click menu-bar-buttons" href="settings.html">
+            <img src="y. images/gear-inverted.png" alt="settings" id="settings" width="30">
+          </a>
+        </div>
+
+        <div id="pref">
+          <div id="theme-toggle-div">
+            <img id="theme-image" src="y. images/sun.png" alt="Sun">
+          </div>
+          <div id="profile-div">
+            <div id="dropdown" class="dropdown-content">
+              <img src="y. images/profile-day.png" alt="Profile Photo" id="profile-photo">
+              <div id="dropdown-items">
+                <a href="page1.html">Profile</a>
+                <a href="page2.html">Item 2</a>
+                <a href="page3.html">Item 3</a>
+                <a href="page4.html">Item 4</a>
+                <a href="page5.html">Item 5</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+    </main>
+  </body>
+</html>

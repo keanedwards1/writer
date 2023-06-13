@@ -1,0 +1,128 @@
+const body = document.body;
+
+#home
+#title-logo
+#logo
+#logo-click
+#logo-img
+#title
+.title
+#menu-bar
+#logo-click
+.menu-bar-buttons
+
+#upvote
+const upvoteImage = document.getElementById('upvote');
+
+
+#comp
+const fightImage = document.getElementById('comp');
+
+
+#settings
+const gearImage = document.getElementById('settings');
+
+#journal
+const toggleJournal = document.getElementById('journal');
+
+#pref
+#theme-toggle-div
+
+#theme-image
+const themeImage = document.getElementById('theme-image'); // toggleTheme.js
+
+#profile-div
+
+#dropdown
+const dropdownContent = document.getElementById('dropdown'); // profileDropdown.js
+
+#profile-photo
+const profileImage = document.getElementById('profile-photo'); // toggleTheme.js
+const profilePhoto = document.getElementById('profile-photo'); // profileDropdown.js *** deleted ***
+
+
+
+#dropdown-items
+const dropdownItems = document.getElementById('dropdown-items'); // profileDropdown.js
+
+.dropdown-item
+#poem-wrapper
+#poem-container
+#tooltip-container
+#poem-prompt
+#prompt-text
+.tooltip4
+#refresh
+#refresh-button-container
+#new-prompt-container
+#new-prompt-butt
+
+#new-prompt-button
+const newPrompt = document.getElementById('new-prompt-button'); // toggleTheme.js
+
+.tooltip2
+const newPromptTooltip = document.querySelector(".tooltip2"); // tooltip2.js
+
+#poem-of-the-day-container
+#poem-of-day
+
+#poem-of-the-day-button
+const poemOfTheDay = document.getElementById('poem-of-the-day-button'); // toggleTheme.js
+
+.tooltip3
+const promptOfTheDayTooltip = document.querySelector(".tooltip3"); // tooltip3.js
+
+#new-poem-container
+#new-peom-butt
+
+#new-poem-button
+const newPoem = document.getElementById('new-poem-button'); // toggleTheme.js
+
+.tooltip4
+const newPoemTooltip = document.querySelector(".tooltip4"); // tooltip.js
+
+#poem-div
+#poem-form
+
+#poem-input
+const poemInput = document.getElementById("poem-input"); // handlePoemSubmit.js
+const textarea = document.querySelector('#poem-input'); // enterPoem.js
+const textarea2 = document.getElementById('poem-input'); // savepoem.js // *** deleted ***
+
+
+#submit-container
+
+#submit-button
+const submitButton = document.getElementById("submit-button"); // handlePoemSubmit.js
+
+#submit-img
+const submitImg = document.getElementById('submit-img'); // toggleTheme.js
+
+.tooltip
+const submitTooltip = document.querySelector(".tooltip"); // tooltip.js
+
+#bottom-bar
+
+#infoButton
+const infoButton = document.getElementById('infoButton'); // popup.js
+
+#info-image
+const toggleInfoButton = document.getElementById('info-image'); // toggleTheme.js
+
+.tooltip5
+const infoTooltip = document.querySelector(".tooltip5"); // tooltip.js
+
+#rectangleContainer
+const rectangleContainer = document.getElementById('rectangleContainer'); // popup.js
+
+#rectangle
+
+#closeButton
+const closeButton = document.getElementById('closeButton'); // popup.js
+
+#popup-writing
+.vector-art
+#toggle-tooltip
+.grid-container
+.item
+.custom-button
